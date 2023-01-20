@@ -21,3 +21,16 @@
     color: white;
 }
 
+
+
+.navbarScroll.navbarDark {
+    background-color: rgba(0, 0, 0, 0.506);
+}
+
+.nav-link {
+    color:white;
+}
+
+.fas {
+    color: white;
+}
