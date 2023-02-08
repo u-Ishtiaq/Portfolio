@@ -23,12 +23,30 @@
 
 
 
+
+
 .navbarScroll.navbarDark {
     background-color: rgba(0, 0, 0, 0.506);
 }
 
-.nav-link {
-    color:white;
+
+
+nav .navbar-nav li a{
+    color: white !important;
+    }
+
+.navbar-brand {
+     color: white;
+ }
+
+.navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #ffffffb0;
+}
+
+
+
+.email {
+    color: white;
 }
 
 .fas {
