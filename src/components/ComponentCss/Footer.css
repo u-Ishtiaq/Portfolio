@@ -1,0 +1,23 @@
+.footer {
+    position: absolute;
+    height: 20%;
+    width: 100%;
+    background-color: #D5E071;
+    color: #21243D;
+    text-align: center;
+   bottom: 0;
+  
+     
+ }
+
+ .footer .icon-rack {
+    margin-top: 2%;
+    align-self: center;
+    display: inline-flex;
+ }
+
+ .footer .icon-rack .icon{
+    padding-left: 10%;
+    display: inline-flex;
+ }
+ 

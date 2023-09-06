@@ -1,0 +1,154 @@
+@font-face {
+  font-family: 'Heebo'; /*a name to be used later*/
+  src: url('https://fonts.googleapis.com/css2?family=Heebo'); /*URL to font*/
+}
+
+:root {
+
+  /* VARIABLES */
+  --themeMainColour:#D5E071;
+  --themeBackgroundColour:#121212;
+  --projectContainerBackgroundColour:#212121;
+
+  --cardHeight:90%;
+  --cardWidth:20%;
+
+  --cardMobileHeight:90%;
+  --cardMobileWidth:60%;
+
+  --cardImageWidth:100%;
+  --cardImageHeight:84%;
+
+  --projectContainerHeight:60%;
+
+  font-family: 'Heebo';
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: var(--themeBackgroundColour);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+
+}
+
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  
+}
+ 
+h1 {
+
+  line-height: 1.1;
+  color: var(--themeMainColour);
+  font-size: 50px;
+  font-style: normal;
+  font-family: 'Heebo';
+  font-weight: 700;
+  text-align: center;
+
+
+}
+h2 {
+  font-size: 30px;
+  text-align: center;
+  color: #FFF;
+}
+
+.tag-line {
+  font-family: 'Heebo';
+  font-size: 19px;
+}
+#welcomeBanner {
+  font-family: 'Heebo'
+}
+p{
+  color: #FFF;
+  font-style: normal;
+  font-weight: 400;
+}
+
+p, #back-button , #close-button {
+  font-size: 15px;
+}
+
+@media only screen and (min-width: 1000px) and (min-height:1000px) {
+  h1 {
+    font-size: 8vh;
+  }
+  h2 {
+    font-size: 4vh;
+  }
+  .tag-line {
+    font-size: 3vh;
+  }
+  p, #back-button , #close-button {
+    font-size: 2vh;
+  }
+
+}
+/* project container size per device */
+
+@media only screen and (max-height:800px) and (max-width:500px)  {
+  :root {
+    --projectContainerHeight:100%;
+    --cardHeight:var(--cardMobileHeight);
+    --cardWidth:var(--cardMobileWidth);
+   
+  }
+  #project-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media only screen and  (min-width:500px) and (min-height:1200px)  {
+  :root {
+    --projectContainerHeight:45%;
+    
+  }
+}
+
+@media only screen and  (min-width:500px) and (max-height:1200px)  {
+  :root {
+    --projectContainerHeight:10%;
+  }
+}
+
+
+
+
+/*font sizes*/
+
+@media only screen and (max-width:600px){
+  
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 19px;
+  }
+
+  .tag-line {
+    font-size: 15px;
+  }
+
+ p, #back-button , #close-button {
+    font-size: 12px;
+  }
+  
+}
+

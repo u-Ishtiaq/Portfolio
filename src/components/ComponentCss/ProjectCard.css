@@ -1,0 +1,80 @@
+
+
+.project-card {
+    /* VARIABLES*/
+    --borderColour:#ffffff00;
+    --imageBottomBorderColour:var(--projectContainerBackgroundColour);
+    --hoverColour: #424242c1;
+    --boxShadowColour:#000000c1;
+    
+    
+
+    border-image: linear-gradient(#8c880c, var(--themeMainColour)) 10;
+
+    border-width: 2px;
+    border-style:solid;
+
+    display: block;
+    position: relative;
+
+
+    cursor: pointer;
+    min-width: var(--cardWidth);
+    max-width: var(--cardWidth);
+    min-height: var(--cardHeight);
+    max-height: var(--cardHeight);
+
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 8px 16px 0 var(--boxShadowColour);
+    transition:  box-shadow 0.1s ease-in-out;
+
+}
+
+
+
+.project-card:hover {
+
+    box-shadow: 0 8px 16px 0 var(--hoverColour);
+
+}
+
+
+.project-card .preview-image {
+ 
+    max-width: var(--cardImageWidth);
+    max-height: var(--cardImageHeight);
+    min-width: var(--cardImageWidth);
+    min-height: var(--cardImageHeight);
+    padding-bottom: 0%;
+    display: flex;
+    
+    
+
+}
+
+.project-card .preview-image img {
+    object-fit:fill;
+    width: 100%;
+    min-height: 100%;
+}
+
+
+
+
+.project-card .project-data {
+  
+    margin-top: -1.5%;
+    min-width: 100%;
+    max-width: 100%;
+
+}
+
+
+.project-data .project-name {
+    margin-top: 2%;
+    text-align: center;
+}
+
+
+
