@@ -7,22 +7,22 @@
     --hoverColour: #424242c1;
     --boxShadowColour:#000000c1;
     
-    
 
     border-image: linear-gradient(#8c880c, var(--themeMainColour)) 10;
 
     border-width: 2px;
     border-style:solid;
 
-    display: block;
+    display: flex;
+    flex-direction: column;
     position: relative;
 
 
     cursor: pointer;
-    min-width: var(--cardWidth);
-    max-width: var(--cardWidth);
-    min-height: var(--cardHeight);
-    max-height: var(--cardHeight);
+    min-width: var(--projectCardWidth);
+    max-width: var(--projectCardWidth);
+    min-height: var(--projectCardHeight);
+    max-height: var(--projectCardHeight);
 
     margin-left: auto;
     margin-right: auto;
@@ -41,39 +41,36 @@
 
 
 .project-card .preview-image {
- 
-    max-width: var(--cardImageWidth);
-    max-height: var(--cardImageHeight);
-    min-width: var(--cardImageWidth);
-    min-height: var(--cardImageHeight);
-    padding-bottom: 0%;
     display: flex;
-    
-    
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    min-height: 80%;
 
 }
 
 .project-card .preview-image img {
-    object-fit:fill;
-    width: 100%;
     min-height: 100%;
+    width: 100%;
+    object-fit: fill;
+  
 }
 
-
-
-
 .project-card .project-data {
-  
+    display: inline-block;
     margin-top: -1.5%;
     min-width: 100%;
     max-width: 100%;
+    max-height: 20%;
 
 }
 
 
+
 .project-data .project-name {
-    margin-top: 2%;
+    margin-top: 5%;
     text-align: center;
+    line-height: 1.2em; 
 }
 
 

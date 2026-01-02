@@ -12,13 +12,16 @@ const Footer = ({linkedin,github}) => {
             <img className='icon' src={GithubIcon} /> 
         </a>
 
-        <a href='https://www.linkedin.com/in/usman-ishtiaq-5b66ab1a2/'> 
+        <a href='https://www.linkedin.com/in/usmanishtiaq/'> 
             <img className='icon' src={LinkedInIcon} /> 
         </a>
 
 
         </div>
-    
+
+        <div className='footer-text'>
+          <p id='copyright-text'>Copyright @2024 All rights reserved</p>
+        </div> 
     </div>
     
   )

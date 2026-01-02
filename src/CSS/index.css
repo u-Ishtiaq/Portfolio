@@ -1,8 +1,7 @@
-@font-face {
-  font-family: 'Heebo'; /*a name to be used later*/
-  src: url('https://fonts.googleapis.com/css2?family=Heebo'); /*URL to font*/
+html,
+body {
+    height: 100%;
 }
-
 :root {
 
   /* VARIABLES */
@@ -13,13 +12,27 @@
   --cardHeight:90%;
   --cardWidth:20%;
 
+  --projectCardHeight:90%;
+  --projectCardWidth:20%;
+
+  --expansionHeight:100%;
+
+  --projectCardMobileHeight:90%;
+  --projectCardMobileWidth:60%;
+
   --cardMobileHeight:90%;
   --cardMobileWidth:60%;
 
   --cardImageWidth:100%;
-  --cardImageHeight:84%;
+  --cardImageHeight:80%;
 
   --projectContainerHeight:60%;
+
+  --footerHeight:20%;
+  --footerWidth:100%;
+  --footerMargin:4%;
+
+  height: 100%;
 
   font-family: 'Heebo';
   line-height: 1.5;
@@ -84,6 +97,111 @@ p, #back-button , #close-button {
   font-size: 15px;
 }
 
+
+
+/* Responsiveness - ordered mobile to desktop */
+
+
+
+/* Normal Sized Mobile Portrait */
+@media only screen and (min-width:200px) and (max-width: 500px) and  (min-height:400px) and (max-height: 900px) 
+  { 
+
+    :root {
+    
+      --footerMargin:90%;
+      --projectContainerHeight:10%;
+      --cardHeight:var(--cardMobileHeight);
+      --cardWidth:var(--cardMobileWidth);
+  
+      --projectCardHeight: var(--projectCardMobileHeight);
+      --projectCardWidth: var(--projectCardMobileWidth);
+      
+  
+    }
+
+}
+/* Small Sized Mobile Portrait */
+@media only screen and (min-width:0px) and (max-width: 200px) and (max-height:400px) {
+  :root {
+    
+    --footerMargin:100%;
+    --projectContainerHeight:10%;
+    --cardHeight:var(--cardMobileHeight);
+    --cardWidth:var(--cardMobileWidth);
+
+    --projectCardHeight: var(--projectCardMobileHeight);
+    --projectCardWidth: var(--projectCardMobileWidth);
+    
+
+  }
+}
+
+
+/* mobile Landscape */
+@media only screen and (min-width:500px) and (max-width: 900px)  and (max-height: 500px) 
+  { 
+    
+    :root {
+    
+      --footerMargin:30%; 
+      --projectContainerHeight:20%;
+      
+  
+    }
+}
+
+/* Tablet small */
+@media only screen and (min-width:500px) and (max-width: 1700px) and (min-height:500px)  and (max-height: 600px) 
+  { 
+    
+    :root {
+    
+      --footerMargin:5%; 
+      --projectContainerHeight:20%; 
+  
+    }
+}
+
+/* Tablet normal */
+@media only screen and (min-width:500px) and (max-width: 1700px) and (min-height:600px)  and (max-height: 900px) 
+  { 
+    
+    :root {
+    
+      --footerMargin:2%; 
+      --projectContainerHeight:10%; 
+  
+    }
+}
+
+/* Small Monitor */
+@media only screen and  (min-width:500px) and (max-width: 1700px) and (min-height:900px)  and (max-height: 1700px) 
+  { 
+    
+    :root {
+    
+      --footerMargin:0%; 
+      --projectContainerHeight:25%; 
+  
+    }
+}
+
+
+/* full size desktop screens */
+@media only screen and  (min-width:1700px) and (min-height:1000px)  {
+  :root {
+   
+    --projectContainerHeight:45%;
+    
+  }
+}
+
+
+
+/*font sizes*/
+
+/* normal pc*/
 @media only screen and (min-width: 1000px) and (min-height:1000px) {
   h1 {
     font-size: 8vh;
@@ -94,45 +212,20 @@ p, #back-button , #close-button {
   .tag-line {
     font-size: 3vh;
   }
-  p, #back-button , #close-button {
+  #back-button , #close-button {
     font-size: 2vh;
   }
-
-}
-/* project container size per device */
-
-@media only screen and (max-height:800px) and (max-width:500px)  {
-  :root {
-    --projectContainerHeight:100%;
-    --cardHeight:var(--cardMobileHeight);
-    --cardWidth:var(--cardMobileWidth);
-   
+  p {
+    font-size: 2.5vh;
   }
-  #project-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-@media only screen and  (min-width:500px) and (min-height:1200px)  {
-  :root {
-    --projectContainerHeight:45%;
-    
-  }
-}
-
-@media only screen and  (min-width:500px) and (max-height:1200px)  {
-  :root {
-    --projectContainerHeight:10%;
-  }
+  
 }
 
 
 
 
-/*font sizes*/
-
-@media only screen and (max-width:600px){
+/* mobile portrait */
+@media only screen and (max-width: 500px)  and (min-height:500px) and (max-height: 900px){
   
   h1 {
     font-size: 40px;
@@ -146,9 +239,33 @@ p, #back-button , #close-button {
     font-size: 15px;
   }
 
- p, #back-button , #close-button {
+  p,#back-button , #close-button {
     font-size: 12px;
   }
+
+
   
 }
 
+/* mobile */
+@media only screen and (max-width:700px){
+  
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 19px;
+  }
+
+  .tag-line {
+    font-size: 15px;
+  }
+
+  p,#back-button , #close-button {
+    font-size: 12px;
+  }
+
+
+  
+}

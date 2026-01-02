@@ -1,4 +1,6 @@
-
+.App{
+   margin-bottom:0;
+}
 #root {
    height: 90vh;
    width: 100%;
@@ -27,6 +29,16 @@ a:any-link{
  
 }
 
+.landing .icon-rack{
+   position: relative;
+   display: flex;
+   top: 10%;
+   left: 60%;
+   transform: translate(-60%,-50%);
+   justify-content: center;
+   column-gap: 20%;
+}
+
 .landing p {
   
    text-align: center;
@@ -38,7 +50,7 @@ a:any-link{
    height: 85vh;
 }
 
-.projects .project-title {
+.projects #project-title {
    margin-left: auto;
    margin-right: auto;
 }
@@ -58,13 +70,14 @@ a:any-link{
 #project-container{
    background-color:var(--projectContainerBackgroundColour);
    display: flex;
+   
    flex-wrap: wrap;
    position: relative;
-   
 
    align-items: stretch;
 
-   justify-content: center;
+   justify-content: stretch;
+  
    row-gap: 50px;
 
    margin-left: auto;
@@ -80,7 +93,8 @@ a:any-link{
    width: 80%;
    min-height:var(--projectContainerHeight) ;
   
-  
+
+
    
 }
 
@@ -93,15 +107,29 @@ a:any-link{
    margin-left: 10%;
   
 }
-@media only screen and (max-width: 600px) {
+
+@media only screen and  (max-width:600px){
+   .landing {
+      margin-top: 15%;
+   }
+   .landing-chevron{
+      padding-bottom: 10%;
+     
+   }
+ 
+}
+@media only screen and (max-width: 800px) and (min-width:600px) {
 
    
    .landing {
-      margin-top: 30%;
+      margin-top: 25%;
    }
    .landing-chevron{
       padding-bottom: 0;
+     
    }
+
+  
    
 }
 
@@ -112,6 +140,7 @@ a:any-link{
    .landing-chevron{
       padding-bottom: 20%;
    }
+
 }
 
 

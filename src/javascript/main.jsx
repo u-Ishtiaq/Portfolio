@@ -87,7 +87,32 @@ function set_element_property(elementTable,className,propertyName,propertyValue)
 
 }
 
-export  {toggle_element_visibility,toggle_element_appear,set_element_property}
+
+function adjust_project_container_size(newSize){
+     /*adjust the project container so that the item doesnt stretch*/
+    
+    let projectContainer = document.getElementById("project-container");
+
+    if (projectContainer) {
+
+        if (newSize){
+            projectContainer.style.minHeight = newSize;
+            projectContainer.style.height = newSize;
+        
+        } 
+        else{
+           
+            let newSize = getComputedStyle(document.querySelector(':root')).getPropertyValue('--projectContainerHeight');
+            projectContainer.style.minHeight = newSize;
+            projectContainer.style.height = newSize;
+        }
+    }
+    else{
+        console.log("no project container?");
+    }
+}
+
+export  {toggle_element_visibility,toggle_element_appear,set_element_property,adjust_project_container_size}
 
 
 

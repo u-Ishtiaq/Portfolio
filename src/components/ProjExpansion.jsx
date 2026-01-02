@@ -9,24 +9,30 @@ const ProjExpansion = ({projectName,visitLink,image,completionText,description,s
         <button id='close-button' onClick={()=>{
             setProjectExpansionVisible(false);
             setProjectsVisible(true);
+          
         }} >X</button>
 
-        <h2>{projectName}</h2>
+        <h2 id='project-name'>{projectName}</h2>
         <div className='project-content'>
-            <div className='image-preview'>
-                <img src={image} alt='preview image'></img>
+      
+            <div className='image-preview-container'>
+                <div className='image-preview'>
+                    <img src={image} alt='preview image'/>
+                </div>
             </div>
 
             <div className='project-description'>
-                <div className='description-block'>
-                 <p>{description}</p>
-                </div>
+            
+                
+                <p>{description}</p>
+            
+                
             </div>
          
 
         </div>
-        <a href={{visitLink}}>
-            <button id='visit-project-button'>Visit</button>
+        <a id='visit-project-button' target='_blank' href={visitLink}>
+            <button >Visit</button>
         </a>
     </div>
   )

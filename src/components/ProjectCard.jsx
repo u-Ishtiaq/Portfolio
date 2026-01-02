@@ -1,19 +1,21 @@
 import React from 'react'
-import { useEffect } from 'react';
 import './ComponentCss/ProjectCard.css'
 
 
 
 
-
-const ProjectCard = ({projectName,image,visitLink,description,completionText,onClick,inDetailCallback,folderCardHeight,folderCardWidth}) => {
+const ProjectCard = ({projectName,image,visitLink,description,completionText,onClick,inDetailCallback}) => {
   
 
   return (
    
       <div className='project-card' onClick={()=>{
         onClick();
-        inDetailCallback({name:projectName,image:image,link:visitLink,tagText:completionText,description:description}) 
+        inDetailCallback({name:projectName,image:image,link:visitLink,tagText:completionText,description:description});
+        /* asign everything and scoll it into view */
+        let projectTitle  = document.getElementById('project-title');
+        projectTitle.scrollIntoView();
+
       }} >
 
           <div className='preview-image' id='image-preview'>

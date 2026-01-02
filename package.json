@@ -1,8 +1,8 @@
 {
   "name": "usman_portfolio",
-  "homepage": "https://u-ishtiaq.github.io/Porfolio",
+  "homepage": "https://usmanishtiaq.uk/",
   "private": true,
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
