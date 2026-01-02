@@ -48,7 +48,9 @@ const App = () => {
 
       <div className='landing'>
         <h1 id='welcomeBanner'>Usman Ishtiaq</h1>
-          <p className="tag-line">Software engineering student at university, check out some of my projects </p>
+          <p className="tag-line">Severely outdated website, I am available on linkedin at the bottom of the page.<br></br>
+          <br></br>
+          This website includes university projects.</p>
 
       </div>
 
